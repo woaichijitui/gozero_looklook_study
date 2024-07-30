@@ -1,0 +1,11 @@
+Name: usercenter
+Host: 0.0.0.0
+Port: 8888
+UserCenterRpc:
+  Etcd:
+    Hosts:
+      - 0.0.0.0:2379
+    Key: usercenter.rpc
+JwtAuth:
+  AccessSecret: 123141414141414aaa # 8位以上
+  AccessExpire: 1000 # 秒

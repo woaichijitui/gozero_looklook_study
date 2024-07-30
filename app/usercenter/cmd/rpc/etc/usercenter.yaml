@@ -1,0 +1,13 @@
+Name: usercenter.rpc
+ListenOn: 0.0.0.0:8080
+Etcd:
+  Hosts:
+  - 0.0.0.0:2379
+  Key: usercenter.rpc
+Mysql:
+  DataSource: "root:PXDN93VRKUm8TeE7@tcp(0.0.0.0:33069)/looklook_usercenter?charset=utf8mb4&parseTime=True&loc=Local"
+Cache:
+  - Host: 0.0.0.0:36379
+    Pass: "G62m50oigInC30sf"
+JwtAuth:
+  AccessExpire: 86400  #60*60*24 = 86,400 一天
